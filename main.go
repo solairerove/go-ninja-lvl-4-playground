@@ -12,4 +12,8 @@ func main() {
 	ex.Ex1()
 
 	fmt.Println()
+
+	ex.Ex2()
+
+	fmt.Println()
 }
