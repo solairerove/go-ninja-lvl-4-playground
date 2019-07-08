@@ -8,9 +8,16 @@ import (
 func Ex8() {
 	fmt.Println("Ex8")
 
-	x := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
+	x := map[string][]string{
+		`bond_james`:      []string{`Shaken, not stirred`, `Martinis`, `Women`},
+		`moneypenny_miss`: []string{`James Bond`, `Literature`, `Computer Science`},
+		`no_dr`:           []string{`Being evil`, `Ice cream`, `Sunsets`},
+	}
 
-	x = append(x[:3], x[6:]...)
-
-	fmt.Println(x)
+	for k, v := range x {
+		fmt.Printf("key: %v,\t value: %v\n", k, v)
+		for i, v2 := range v {
+			fmt.Println("\t", i, v2)
+		}
+	}
 }
