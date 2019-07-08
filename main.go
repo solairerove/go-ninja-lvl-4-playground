@@ -20,4 +20,8 @@ func main() {
 	ex.Ex3()
 
 	fmt.Println()
+
+	ex.Ex4()
+
+	fmt.Println()
 }
