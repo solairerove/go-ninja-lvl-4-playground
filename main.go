@@ -24,4 +24,8 @@ func main() {
 	ex.Ex4()
 
 	fmt.Println()
+
+	ex.Ex5()
+
+	fmt.Println()
 }
